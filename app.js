@@ -23,15 +23,18 @@ let possibleKeys = [
   "Cb",
 ];
 
-// TODO write a shuffleArray function that randomly sorts the possibleKeys array
-
-function getRandomKey() {
-  practiceKey.push(possibleKeys);
-}
-
 // TODO write (copy) a getRandomKey function that returns a random value from the array of possibleKeys. Ensure that there aren't any duplicate values
 
-// TODO call the getRandomKey when the button is clicked and display the value
+function getRandomKey(array) {
+  const i = Math.floor(Math.random() * array.length);
+  return array[i];
+}
+
+// TODO add an event listener to call the getRandomKey when the button is clicked and display the value
+
+button.addEventListener("click", event) {
+  console.log("Random Key");
+};
 
 // TODO 1: Declare & assign variables pointing to the corresponding element(s)
 // statement should be the "statement" div
