@@ -21,11 +21,10 @@ main {
   border: 1px solid black;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 5px gray;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   font-size: 8rem;
   text-align: center;
   margin: 1rem 0px;
-  min-height: 2em;
 }
 
 #explanation {
