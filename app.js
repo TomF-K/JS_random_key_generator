@@ -39,6 +39,17 @@ generatorButton.addEventListener("click", (event) => {
   keyHolder.textContent = practiceKey;
 });
 
+// TODO how to prevent duplicates?
+
+// pop/push selected items into practiceKey2 array
+
+/* if (possibleKeys.length > 0) {
+pop the value into practiceKey2 array, but still display on the keyHolder text
+else { pop a random value from practiceKey2 back into practiceKey
+
+}
+*/
+
 // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
 
 /*for (let button of optionButtons) {

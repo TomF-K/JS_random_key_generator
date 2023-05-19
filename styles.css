@@ -25,6 +25,7 @@ main {
   font-size: 8rem;
   text-align: center;
   margin: 1rem 0px;
+  min-height: 120px;
 }
 
 #explanation {
