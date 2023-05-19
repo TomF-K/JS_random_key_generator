@@ -7,11 +7,17 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --sans: "DM Sans", sans serif;
+  --navtext: "Montserrat", sans serif;
+}
+
 header {
   display: flex;
   width: 100%;
   justify-content: center;
   padding: 1rem;
+  background-image: ;
 }
 
 .logo-img {
@@ -22,6 +28,7 @@ header {
   width: 50%;
   margin: 1em auto;
   text-align: center;
+  font-family: var(--sans);
 }
 
 main {
@@ -30,6 +37,7 @@ main {
   margin: 0px auto;
   display: flex;
   flex-direction: column;
+  font-family: var(--sans);
 }
 
 #statement {
