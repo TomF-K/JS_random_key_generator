@@ -1,12 +1,27 @@
-body {
-  margin: 1rem auto;
-  padding: 3rem;
-  font-family: sans-serif;
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo-img {
+  max-width: 20%;
+}
+
+.title {
   width: 50%;
   margin: 1em auto;
+  text-align: center;
 }
 
 main {
@@ -25,7 +40,7 @@ main {
   font-size: 8rem;
   text-align: center;
   margin: 1rem 0px;
-  min-height: 120px;
+  min-height: 210px;
 }
 
 #explanation {
