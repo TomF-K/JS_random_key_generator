@@ -31,6 +31,9 @@ header {
 .logo-img {
   width: 250px;
   margin-left: 1rem;
+}
+
+.logo-container {
   background-color: transparent;
 }
 
