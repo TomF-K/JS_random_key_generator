@@ -24,11 +24,14 @@ header {
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid black;
+  background-image: url("img/FBT_header_img.png");
+  background-size: cover;
 }
 
-header img {
+.logo-img {
   width: 250px;
   margin-left: 1rem;
+  background-color: transparent;
 }
 
 nav {
