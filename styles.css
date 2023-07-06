@@ -14,26 +14,27 @@ html {
 
 body {
   font-family: var(--sans);
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: flex;
   flex-flow: row nowrap;
-  width: 100%;
-  justify-content: center;
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid black;
 }
 
 header img {
-  min-width: 200px;
+  width: 250px;
+  margin-left: 1rem;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
+  justify-content: flex-end;
+  width: 80%;
 }
 
 nav a {
@@ -47,11 +48,7 @@ ul {
 }
 
 li {
-  display: inline;
-}
-
-.logo-img {
-  max-width: 20%;
+  display: inline-block;
 }
 
 .title {
@@ -113,4 +110,20 @@ button {
 
 .incorrect {
   background-color: lightpink;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-flow: row wrap;
+  }
+  nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .logo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
