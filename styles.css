@@ -46,6 +46,11 @@ nav {
 nav a {
   text-decoration: none;
   padding: 1rem;
+  color: black;
+}
+
+nav a:hover {
+  color: slategrey;
 }
 
 ul {
@@ -60,6 +65,7 @@ li {
 .title {
   width: 50%;
   margin: 1em auto;
+  padding-top: 2rem;
   text-align: center;
   font-family: var(--sans);
 }
@@ -74,7 +80,7 @@ main {
   font-family: var(--sans);
 }
 
-#statement {
+#key_display {
   border: 1px solid black;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 5px gray;
@@ -116,6 +122,12 @@ button {
 
 .incorrect {
   background-color: lightpink;
+}
+
+@media (max-width: 640px) {
+  nav {
+    justify-content: space-evenly;
+  }
 }
 
 @media (max-width: 900px) {

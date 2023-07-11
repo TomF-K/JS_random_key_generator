@@ -1,11 +1,11 @@
 // Key generator
 // declare the element that will display the generated key
 
-let keyHolder = document.getElementById("statement");
+let keyHolder = document.getElementById("key_display");
 
 // Then you need an array containing all of the possible options that could be passed into practiceKey
 
-let possibleKeys = [
+const possibleKeys = [
   "C",
   "F",
   "Bb",
@@ -23,57 +23,21 @@ let possibleKeys = [
   "Cb",
 ];
 
-// TODO write (copy) a getRandomKey function that returns a random value from the array of possibleKeys. Ensure that there aren't any duplicate values
+// TODO 1 generate random number
 
-function getRandomKey(array) {
-  const i = Math.floor(Math.random() * array.length);
-  return array[i];
+function getRandomNumber() {
+  return Math.floor(Math.random() * possibleKeys.length);
 }
+
+// TODO 2 on click, display random element from possibleKeys array
 
 // TODO add an event listener to call the getRandomKey when the button is clicked and display the value
 
 let generatorButton = document.querySelector("button");
 
 generatorButton.addEventListener("click", (event) => {
-  let practiceKey = getRandomKey(possibleKeys);
+  let practiceKey = possibleKeys[getRandomNumber()];
   keyHolder.textContent = practiceKey;
 });
 
 // TODO how to prevent duplicates?
-
-// pop/push selected items into practiceKey2 array
-
-/* if (possibleKeys.length > 0) {
-pop the value into practiceKey2 array, but still display on the keyHolder text
-else { pop a random value from practiceKey2 back into practiceKey
-
-}
-*/
-
-// TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
-
-/*for (let button of optionButtons) {
-  button.addEventListener("click", (event) => {
-    // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
-
-    explanation.textContent = fact.explanation;
-
-    // TODO 7: Within the event handler function,
-    // Use a for loop to disable all the option buttons
-
-    for (let button of optionButtons) {
-      disable(button);
-      console.log(button.value);
-    }
-    // TODO 8: Within the event handler function,
-    // Get the guessed value from the clicked button
-    // Use a conditional to compare the guess to the fact's answer
-    // and add the "correct"/"incorrect" class as appropriate
-
-    if (isCorrect(button.value)) {
-      button.classList.add("correct");
-    } else {
-      button.classList.add("incorrect");
-    }
-  });
-} */
