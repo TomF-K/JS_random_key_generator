@@ -29,15 +29,31 @@ function getRandomNumber() {
   return Math.floor(Math.random() * possibleKeys.length);
 }
 
-// TODO 2 on click, display random element from possibleKeys array
+// on click, display random element from possibleKeys array
 
-// TODO add an event listener to call the getRandomKey when the button is clicked and display the value
+// add an event listener to call the getRandomKey when the button is clicked and display the value
 
 let generatorButton = document.querySelector("button");
 
-generatorButton.addEventListener("click", (event) => {
+/* generatorButton.addEventListener("click", (event) => {
   let practiceKey = possibleKeys[getRandomNumber()];
   keyHolder.textContent = practiceKey;
-});
+}); */
 
 // TODO how to prevent duplicates?
+
+// set up an array to hold used keys
+
+let usedKeys = [];
+
+function generate() {
+  usedKeys.push(practiceKey);
+  console.log(usedKeys);
+}
+
+// Apply this to the generatorButton function
+generatorButton.addEventListener("click", (event) => {
+  let practiceKey = possibleKeys[getRandomNumber()];
+  usedKeys.unshift(practiceKey);
+  keyHolder.textContent = usedKeys[0];
+});
