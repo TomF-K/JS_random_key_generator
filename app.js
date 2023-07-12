@@ -46,14 +46,18 @@ let generatorButton = document.querySelector("button");
 
 let usedKeys = [];
 
-function generate() {
-  usedKeys.push(practiceKey);
-  console.log(usedKeys);
-}
-
 // Apply this to the generatorButton function
 generatorButton.addEventListener("click", (event) => {
   let practiceKey = possibleKeys[getRandomNumber()];
   usedKeys.unshift(practiceKey);
   keyHolder.textContent = usedKeys[0];
+  console.log(practiceKey.length);
 });
+
+/* write if/else statement to prevent duplicates 
+
+if (!usedKeys.includes(practiceKey)) {
+  usedKeys.unshift(practiceKey);
+}
+
+*/
