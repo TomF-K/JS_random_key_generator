@@ -5,7 +5,7 @@ let keyHolder = document.getElementById("key_display");
 
 // Then you need an array containing all of the possible options that could be passed into practiceKey
 
-const possibleKeys = [
+let possibleKeys = [
   "C",
   "F",
   "Bb",
@@ -44,20 +44,55 @@ let generatorButton = document.querySelector("button");
 
 // set up an array to hold used keys
 
-let usedKeys = [];
+const usedKeys = [];
 
 // Apply this to the generatorButton function
 generatorButton.addEventListener("click", (event) => {
+  if (possibleKeys.length === 0) {
+    possibleKeys = [
+      "C",
+      "F",
+      "Bb",
+      "Eb",
+      "Ab",
+      "Db",
+      "Gb",
+      "B",
+      "E",
+      "A",
+      "D",
+      "G",
+      "F#",
+      "C#",
+      "Cb",
+    ];
+  }
   let practiceKey = possibleKeys[getRandomNumber()];
-  usedKeys.unshift(practiceKey);
-  keyHolder.textContent = usedKeys[0];
-  console.log(practiceKey.length);
+  console.log(practiceKey);
+  // usedKeys.unshift(practiceKey);
+  keyHolder.textContent = practiceKey;
+  // console.log(practiceKey.length);
+  // console.log(possibleKeys);
+
+  const index = possibleKeys.indexOf(practiceKey);
+  if (index > -1) {
+    // only splice array when item is found
+    possibleKeys.splice(index, 1); // 2nd parameter means remove one item only
+  }
+  console.log(possibleKeys);
 });
 
 /* write if/else statement to prevent duplicates 
 
 if (!usedKeys.includes(practiceKey)) {
   usedKeys.unshift(practiceKey);
+}
+
+ const newArray = possibleKeys.filter(
+    {
+      return (key) => !possibleKeys.includes(practiceKey)
+    });
+  console.log("newArray", newArray);
 }
 
 */
