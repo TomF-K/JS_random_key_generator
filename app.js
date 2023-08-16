@@ -1,11 +1,11 @@
 // Key generator
 // declare the element that will display the generated key
 
-let keyHolder = document.getElementById("key_display");
+const keyHolder = document.querySelector(".key-display");
 
 // Then you need an array containing all of the possible options that could be passed into practiceKey
 
-let possibleKeys = [
+const possibleKeys = [
   "C",
   "F",
   "Bb",
@@ -33,7 +33,7 @@ function getRandomNumber() {
 
 // add an event listener to call the getRandomKey when the button is clicked and display the value
 
-let generatorButton = document.querySelector("button");
+const generatorButton = document.querySelector(".key-btn");
 
 /* generatorButton.addEventListener("click", (event) => {
   let practiceKey = possibleKeys[getRandomNumber()];

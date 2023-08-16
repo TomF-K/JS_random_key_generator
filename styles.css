@@ -110,7 +110,7 @@ button {
   flex-direction: column;
 }
 
-button {
+#true {
   padding: 0.5rem;
   font-size: medium;
   border-radius: 5px;
