@@ -5,7 +5,7 @@ const keyHolder = document.querySelector(".key-display");
 
 // Then you need an array containing all of the possible options that could be passed into practiceKey
 
-const possibleKeys = [
+let possibleKeys = [
   "C",
   "F",
   "Bb",
