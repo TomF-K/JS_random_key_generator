@@ -10,6 +10,7 @@ html {
 :root {
   --sans: "Arial", sans serif;
   --navtext: "Montserrat", sans serif;
+  --blue: #49a6e9;
 }
 
 body {
@@ -19,30 +20,45 @@ body {
   padding: 0;
 }
 
+/* HEADER & NAV STYLING */
+
 header {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  padding: 1rem;
   border-bottom: 2px solid black;
   background-image: url("img/FBT_header_img.png");
   background-size: cover;
-  height: 15vh;
+  height: auto;
 }
 
 .logo-img {
   width: 250px;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .logo-container {
   background-color: transparent;
 }
 
-nav {
+button {
+  border: none;
+  margin-right: 2rem;
+  background-color: transparent;
+}
+
+.fa-bars {
+  color: var(--blue);
+  font-size: 2.5rem;
+  background-color: transparent;
+}
+.fa-bars:hover {
+  font-size: 3rem;
+  transform: rotate(90deg);
+}
+
+.nav-header {
   display: flex;
-  justify-content: flex-end;
-  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 nav a {
@@ -61,8 +77,9 @@ ul {
   text-decoration: none;
 }
 
-li {
-  display: inline-block;
+.links {
+  height: 0;
+  overflow: hidden;
 }
 
 /* MEDIA QUERIES */
