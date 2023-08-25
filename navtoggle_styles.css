@@ -51,6 +51,7 @@ button {
 }
 .fa-bars:hover {
   font-size: 3rem;
+  cursor: pointer;
   transform: rotate(90deg);
   transition: all 0.1s linear;
 }
@@ -78,9 +79,17 @@ ul {
   text-decoration: none;
 }
 
+li {
+  padding-bottom: 0.5em;
+}
+
 .links {
   height: 0;
   overflow: hidden;
+}
+
+.show-links {
+  height: 10rem;
 }
 
 /* MEDIA QUERIES */
