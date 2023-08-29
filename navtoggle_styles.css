@@ -80,7 +80,9 @@ ul {
 }
 
 li {
-  padding-bottom: 0.5em;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .links {
@@ -106,7 +108,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* @media (max-width: 720px) {
+/* @media (min-width: 780px) {
   li {
     display: block;
     margin-bottom: 1rem;
