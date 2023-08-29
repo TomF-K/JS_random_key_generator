@@ -118,7 +118,7 @@ footer {
   color: white;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   li {
     display: block;
     margin-bottom: 1rem;
