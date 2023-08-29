@@ -104,6 +104,18 @@ main {
   border-radius: 5px;
 }
 
+/* footer */
+
+footer {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 720px) {
   li {
     display: block;

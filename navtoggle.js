@@ -1,3 +1,9 @@
+// get year for footer
+
+const date = document.querySelector(".date");
+
+date.innerHTML = new Date().getFullYear();
+
 // NAVBAR LINK TOGGLE
 
 const navToggle = document.querySelector(".nav-toggle");

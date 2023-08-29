@@ -1,3 +1,9 @@
+// get year for footer
+
+const date = document.querySelector(".date");
+
+date.innerHTML = new Date().getFullYear();
+
 // Key generator
 // declare the element that will display the generated key
 

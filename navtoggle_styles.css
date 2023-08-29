@@ -92,6 +92,18 @@ li {
   height: 10rem;
 }
 
+/* footer */
+
+footer {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: black;
+  color: white;
+}
+
 /* MEDIA QUERIES */
 
 /* @media (max-width: 720px) {
