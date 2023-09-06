@@ -23,7 +23,10 @@ body {
 /* HEADER & NAV STYLING */
 
 header {
-  border-bottom: 2px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-bottom: 1px solid black;
   background-image: url("img/FBT_header_img.png");
   background-size: cover;
   height: auto;
@@ -36,6 +39,10 @@ header {
 
 .logo-container {
   background-color: transparent;
+}
+
+.nav-toggle {
+  justify-self: flex-end;
 }
 
 button {
@@ -56,11 +63,10 @@ button {
   transition: all 0.1s linear;
 }
 
-.nav-header {
+nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: flex-end;
+  width: 80%;
 }
 
 nav a {
@@ -115,7 +121,8 @@ footer {
 
   .links {
     height: 1.3rem;
-    width: 60%;
+    display: inline;
+    width: 80%;
   }
 
   nav {
