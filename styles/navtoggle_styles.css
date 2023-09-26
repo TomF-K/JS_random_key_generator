@@ -1,34 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-:root {
-  --sans: "Arial", sans serif;
-  --navtext: "Montserrat", sans serif;
-  --blue: #49a6e9;
-}
-
-body {
-  font-family: var(--sans);
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0;
-}
+@import "./base.css";
 
 /* HEADER & NAV STYLING */
 
-header {
-  border-bottom: 1px solid black;
-  background-image: url("img/FBT_header_img.png");
-  background-size: cover;
-  padding-top: 1rem;
-  height: auto;
-}
 .nav-header {
   display: flex;
   align-items: center;

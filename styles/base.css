@@ -1,0 +1,32 @@
+/* General styling */
+:root {
+    --sans: "Arial", sans serif;
+    --navtext: "Montserrat", sans serif;
+  }
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: var(--sans);
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Header Styling */
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    background-image: url("../img/FBT_header_img.png");
+    background-size: cover;
+  }
