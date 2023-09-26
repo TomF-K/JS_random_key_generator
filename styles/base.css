@@ -30,3 +30,36 @@ html {
     background-image: url("../img/FBT_header_img.png");
     background-size: cover;
   }
+
+  .header__logo-container {
+    background-color: transparent;
+  }
+
+  .header__logo-img {
+    width: 250px;
+    margin-left: 1rem;
+  }
+
+  /* nav & link styling */
+
+  nav a {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+  }
+  
+  nav a:hover {
+    color: slategrey;
+  }
+  
+  .nav__list {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav__list-link {
+    display: inline-block;
+  }
+  
+  
