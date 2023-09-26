@@ -25,16 +25,12 @@ button {
   transform: rotate(90deg);
   transition: all 0.1s linear;
 }
+/* blog post grid */
 
-nav a {
-  text-decoration: none;
-  padding: 1rem;
-  font-size: 1.3rem;
-  color: black;
-}
-
-nav a:hover {
-  color: slategrey;
+.blog__post-img {
+  background-color: grey;
+  height: 200px;
+  width: 200px;
 }
 
 
