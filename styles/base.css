@@ -41,6 +41,11 @@ html {
   }
 
   /* nav & link styling */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
 
   nav a {
     text-decoration: none;

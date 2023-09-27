@@ -2,12 +2,6 @@
 
 /* HEADER & NAV STYLING */
 
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 button {
   border: none;
   margin-right: 2rem;
