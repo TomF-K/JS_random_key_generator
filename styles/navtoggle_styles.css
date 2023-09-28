@@ -21,6 +21,14 @@ button {
 }
 /* blog post grid */
 
+.grid__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+}
+
 .blog__post-img {
   background-color: grey;
   height: 200px;
@@ -42,7 +50,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 780px) {
+@media (min-width: 1050px) {
   .nav-toggle {
     display: none;
   }

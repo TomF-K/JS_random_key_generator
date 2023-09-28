@@ -41,6 +41,8 @@ html {
   }
 
   /* nav & link styling */
+
+  /* nav styling at <1050px */
   nav {
     display: flex;
     justify-content: flex-end;
